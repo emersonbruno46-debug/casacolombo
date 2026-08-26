@@ -1,0 +1,41 @@
+FONTES PRINCIPAIS
+
+Instagram oficial
+https://www.instagram.com/casacolombo_/
+
+Linktree oficial
+https://linktr.ee/casacolombo_
+
+WhatsApp — unidade Ibituruna (reservas, eventos e outros)
+https://wa.me/message/IATMFUDUAXCIC1
+
+WhatsApp — unidade Melo (somente pedidos)
+https://wa.me/message/FKFQMYXBA3BMK1
+
+Google Maps — unidade Ibituruna
+https://www.google.com/maps/place/Casa+Colombo/@-16.7267239,-43.8836009,17z/data=!4m6!3m5!1s0xab53714f0a1783:0x15ebdabad9943eba!8m2!3d-16.7267239!4d-43.8836009!16s%2Fg%2F11kppjp8bf
+
+Google Maps — unidade Melo / Casa Colombo Filial
+https://www.google.com/maps/place/Casa+Colombo+Filial/@-16.7235211,-43.8763229,17z/data=!4m6!3m5!1s0xab5300703c8d1d:0x73b763b88f407e7a!8m2!3d-16.7235211!4d-43.8763229!16s%2Fg%2F11zkj_wv0q
+
+Restaurant Guru — unidade Ibituruna
+https://restaurantguru.com.br/Casa-Colombo-Montes-Claros
+
+Tripadvisor — unidade Ibituruna
+https://www.tripadvisor.com.br/Restaurant_Review-g681229-d33251725-Reviews-Casa_Colombo-Montes_Claros_State_of_Minas_Gerais.html
+
+Instagram — reels usados como referência da unidade Melo
+https://www.instagram.com/reel/DQb7mwjji28/
+https://www.instagram.com/reel/DQSGkA5Dur6/
+https://www.instagram.com/reel/DbGMZBDRCmn/
+https://www.instagram.com/reel/DOLtDZLDruG/
+
+Facebook — vídeos usados como referência
+https://www.facebook.com/100064176127251/videos/800216575969894/
+https://www.facebook.com/100064176127251/videos/2055517115067530/
+
+OBSERVAÇÕES
+- A ficha da unidade Melo aparece no Google Maps como “Casa Colombo Filial”.
+- As capas do Instagram possuem o ícone de reprodução e devem ser tratadas como referência, não como imagem final.
+- O arquivo inventario_midias.csv registra caminho, unidade, fonte, dimensões, tamanho e SHA-256 de cada arquivo-fonte.
+
