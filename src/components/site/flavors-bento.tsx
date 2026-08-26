@@ -6,7 +6,7 @@ import { casaColomboData } from "@/data/casa-colombo";
 
 export function FlavorsBento() {
   return (
-    <section className="py-24 px-6 lg:px-12 bg-forest text-paper">
+    <section id="sabores" className="py-24 px-6 lg:px-12 bg-forest text-paper scroll-mt-24">
       <div className="container mx-auto">
         
         <div className="text-center mb-16">
@@ -33,13 +33,13 @@ export function FlavorsBento() {
             className="md:col-span-2 md:row-span-2 relative rounded-2xl overflow-hidden group cursor-pointer"
           >
             <Image
-              src="/images/ibituruna/03_Cafes_e_Pratos/google_maps_59.jpg"
+              src="/images/ibituruna/03_Cafes_e_Pratos/google_maps_84.jpg"
               alt="Café especial"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-forest/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
-            <div className="absolute bottom-6 left-6 right-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+            <div className="absolute inset-0 bg-gradient-to-t from-forest/80 via-transparent to-transparent opacity-80 transition-opacity duration-500" />
+            <div className="absolute bottom-6 left-6 right-6 transition-transform duration-500">
               <span className="text-soft-blush text-sm uppercase tracking-widest font-semibold block mb-2">Cafés Especiais</span>
               <p className="text-warm-ivory text-xl font-heading">Grãos selecionados com precisão.</p>
             </div>
@@ -54,12 +54,12 @@ export function FlavorsBento() {
             className="relative rounded-2xl overflow-hidden group cursor-pointer"
           >
             <Image
-              src="/images/melo/03_Cafes_e_Pratos/google_maps_melo_13.jpg"
-              alt="Doces"
+              src="/images/ibituruna/03_Cafes_e_Pratos/google_maps_113.jpg"
+              alt="Doces Finos"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-forest/20 group-hover:bg-forest/40 transition-colors duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-t from-forest/70 to-transparent transition-colors duration-500" />
             <div className="absolute bottom-6 left-6">
               <span className="text-paper text-lg font-heading">Doces Finos</span>
             </div>
@@ -74,17 +74,28 @@ export function FlavorsBento() {
             className="relative rounded-2xl overflow-hidden group cursor-pointer"
           >
             <Image
-              src="/images/ibituruna/03_Cafes_e_Pratos/google_maps_32.jpg"
-              alt="Pratos"
+              src="/images/ibituruna/03_Cafes_e_Pratos/google_maps_54.jpg"
+              alt="Gastronomia"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-forest/20 group-hover:bg-forest/40 transition-colors duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-t from-forest/70 to-transparent transition-colors duration-500" />
             <div className="absolute bottom-6 left-6">
               <span className="text-paper text-lg font-heading">Gastronomia</span>
             </div>
           </motion.div>
 
+        </div>
+
+        <div className="mt-12 text-center">
+          <a 
+            href={casaColomboData.social.menu}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-warm-ivory hover:text-white border-b border-warm-ivory/30 hover:border-white pb-1 font-manrope uppercase tracking-widest text-sm transition-colors"
+          >
+            Abrir cardápio completo
+          </a>
         </div>
       </div>
     </section>

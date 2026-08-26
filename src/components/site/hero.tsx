@@ -48,17 +48,23 @@ export function Hero() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
+              asChild
               size="lg"
               className="bg-warm-ivory text-forest hover:bg-white rounded-full px-8 py-6 text-lg transition-transform hover:scale-105"
             >
-              {heroPrimaryCta}
+              <a href={casaColomboData.social.menu} target="_blank" rel="noopener noreferrer">
+                {heroPrimaryCta}
+              </a>
             </Button>
             <Button
+              asChild
               size="lg"
               variant="outline"
               className="bg-transparent text-paper border-paper/40 hover:bg-paper/10 hover:border-paper rounded-full px-8 py-6 text-lg transition-colors"
             >
-              {heroSecondaryCta}
+              <a href="#unidades">
+                {heroSecondaryCta}
+              </a>
             </Button>
           </div>
         </motion.div>

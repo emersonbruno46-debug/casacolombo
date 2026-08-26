@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
-import { Jost, Manrope } from "next/font/google";
+import { Fraunces, Manrope } from "next/font/google";
 import "./globals.css";
 import { casaColomboData } from "@/data/casa-colombo";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 
-const headingFont = Jost({
+const headingFont = Fraunces({
   variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["300", "400", "500"]
 });
 
 const manrope = Manrope({

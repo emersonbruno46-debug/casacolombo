@@ -1,5 +1,6 @@
 import { casaColomboData } from "@/data/casa-colombo";
 import { Hero } from "@/components/site/hero";
+import { ActionHub } from "@/components/site/action-hub";
 import { Manifesto } from "@/components/site/manifesto";
 import { FlavorsBento } from "@/components/site/flavors-bento";
 import { LocationsStack } from "@/components/site/locations-stack";
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen bg-paper text-text-light">
       <Hero />
+      <ActionHub />
       <Manifesto />
       <FlavorsBento />
       <LocationsStack />

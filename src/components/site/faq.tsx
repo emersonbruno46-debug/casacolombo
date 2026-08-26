@@ -11,7 +11,7 @@ export function FAQ() {
   const { ibituruna, melo } = casaColomboData.units;
 
   return (
-    <section className="py-24 px-6 lg:px-12 bg-paper text-forest">
+    <section id="contato" className="py-24 px-6 lg:px-12 bg-paper text-forest scroll-mt-24">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-heading mb-4">Informações Úteis</h2>
@@ -34,7 +34,11 @@ export function FAQ() {
               </li>
               <li className="flex gap-3">
                 <Clock className="w-5 h-5 shrink-0 mt-1 text-soft-blush" />
-                <span>Horários: A confirmar nos canais oficiais.</span>
+                <span>
+                  <a href={casaColomboData.social.instagram} target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">
+                    Consulte o horário atualizado nos canais oficiais
+                  </a>
+                </span>
               </li>
               <li>
                 <span className="font-semibold text-warm-ivory block mt-4 mb-1">Finalidade principal:</span>
@@ -56,7 +60,11 @@ export function FAQ() {
               </li>
               <li className="flex gap-3">
                 <Clock className="w-5 h-5 shrink-0 mt-1 text-wine" />
-                <span>Horários: A confirmar nos canais oficiais.</span>
+                <span>
+                  <a href={casaColomboData.social.instagram} target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">
+                    Consulte o horário atualizado nos canais oficiais
+                  </a>
+                </span>
               </li>
               <li>
                 <span className="font-semibold text-paper block mt-4 mb-1">Finalidade principal:</span>

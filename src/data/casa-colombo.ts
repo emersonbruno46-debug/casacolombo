@@ -23,13 +23,14 @@ export const casaColomboData = {
   social: {
     instagram: "https://www.instagram.com/casacolombo_/",
     linktree: "https://linktr.ee/casacolombo_",
+    menu: "https://cardapio.speedysistemas.com.br/casacolombo"
   },
   copy: {
     eyebrow: "CAFÉ, ENCONTROS E SABORES EM MONTES CLAROS",
     heroHeadline: "Entre. Sente. Fique um pouco.",
     heroSupport: "Cafés, doces, pratos e dois endereços para viver a Casa Colombo no seu ritmo.",
-    heroPrimaryCta: "Conheça as unidades",
-    heroSecondaryCta: "Falar no WhatsApp",
+    heroPrimaryCta: "Ver cardápio",
+    heroSecondaryCta: "Conheça as unidades",
     manifesto: "Mais do que servir café, criar espaço para os encontros que merecem durar.",
     flavorsTitle: "Sabores que pedem uma pausa.",
     unitsTitle: "Duas casas. O mesmo convite para ficar.",

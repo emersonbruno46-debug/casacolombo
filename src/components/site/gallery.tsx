@@ -7,12 +7,36 @@ import { X, Expand } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const galleryImages = [
-  { src: "/images/ibituruna/02_Ambientes/google_maps_29.jpg", alt: "Ambiente 1" },
-  { src: "/images/ibituruna/02_Ambientes/tripadvisor_ambiente-clientes.jpg", alt: "Ambiente 2" },
-  { src: "/images/melo/02_Ambientes/google_maps_melo_6.jpg", alt: "Ambiente Melo" },
-  { src: "/images/ibituruna/03_Cafes_e_Pratos/google_maps_42.jpg", alt: "Detalhe café" },
-  { src: "/images/ibituruna/03_Cafes_e_Pratos/google_maps_76.jpg", alt: "Detalhe gastronomia" },
-  { src: "/images/melo/03_Cafes_e_Pratos/google_maps_melo_8.jpg", alt: "Doces Melo" }
+  { 
+    src: "/images/ibituruna/02_Ambientes/tripadvisor_ambiente-clientes.jpg", 
+    alt: "Atmosfera Casa Colombo",
+    className: "md:col-span-2 md:row-span-2"
+  },
+  { 
+    src: "/images/melo/02_Ambientes/google_maps_melo_6.jpg", 
+    alt: "Detalhes do espaço",
+    className: "md:col-span-2 md:row-span-1"
+  },
+  { 
+    src: "/images/ibituruna/03_Cafes_e_Pratos/google_maps_42.jpg", 
+    alt: "Momento café",
+    className: "md:col-span-1 md:row-span-1"
+  },
+  { 
+    src: "/images/ibituruna/03_Cafes_e_Pratos/google_maps_76.jpg", 
+    alt: "Gastronomia",
+    className: "md:col-span-1 md:row-span-1"
+  },
+  { 
+    src: "/images/ibituruna/02_Ambientes/google_maps_29.jpg", 
+    alt: "Ambiente externo",
+    className: "md:col-span-2 md:row-span-1"
+  },
+  { 
+    src: "/images/melo/03_Cafes_e_Pratos/google_maps_melo_8.jpg", 
+    alt: "Doces",
+    className: "md:col-span-2 md:row-span-1"
+  }
 ];
 
 export function Gallery() {
@@ -32,26 +56,25 @@ export function Gallery() {
           </motion.h2>
         </div>
 
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 lg:gap-6 auto-rows-[250px] lg:auto-rows-[300px]">
           {galleryImages.map((img, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.8 }}
-              className="relative rounded-xl overflow-hidden group cursor-zoom-in break-inside-avoid"
+              className={`relative rounded-xl overflow-hidden group cursor-zoom-in ${img.className}`}
               onClick={() => setSelectedImg(img.src)}
             >
               <Image
                 src={img.src}
                 alt={img.alt}
-                width={600}
-                height={800}
-                className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-forest/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <div className="bg-paper text-forest p-3 rounded-full scale-50 group-hover:scale-100 transition-transform duration-500">
+                <div className="bg-paper text-forest p-3 rounded-full scale-50 group-hover:scale-100 transition-transform duration-500 shadow-xl">
                   <Expand className="w-5 h-5" />
                 </div>
               </div>

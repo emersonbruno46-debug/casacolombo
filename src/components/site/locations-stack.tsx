@@ -10,7 +10,7 @@ export function LocationsStack() {
   const { ibituruna, melo } = casaColomboData.units;
 
   return (
-    <section className="relative w-full bg-paper pb-24 lg:pb-32">
+    <section id="unidades" className="relative w-full bg-paper pb-24 lg:pb-32 scroll-mt-24">
       
       <div className="container mx-auto px-6 lg:px-12 pt-24 pb-12 text-center">
         <h2 className="text-4xl md:text-5xl font-heading text-forest">
@@ -20,8 +20,14 @@ export function LocationsStack() {
 
       <div className="container mx-auto px-6 lg:px-12 flex flex-col gap-12 lg:gap-0 relative">
         
-        {/* Ibituruna Card (Sticky on Desktop) */}
-        <div className="lg:sticky lg:top-24 w-full h-auto lg:h-[80vh] bg-forest rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row z-10">
+        {/* Ibituruna Card */}
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.8 }}
+          className="w-full h-auto lg:h-[80vh] min-h-[600px] bg-forest rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row z-10"
+        >
           <div className="lg:w-1/2 relative h-[40vh] lg:h-full">
             <Image
               src="/images/ibituruna/01_Fachadas_e_Marca/tripadvisor_fachada-principal.jpg"
@@ -58,10 +64,16 @@ export function LocationsStack() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Melo Card (Scrolls over Ibituruna) */}
-        <div className="lg:sticky lg:top-32 w-full h-auto lg:h-[80vh] bg-espresso rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row-reverse z-20 mt-0 lg:mt-32">
+        {/* Melo Card */}
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.8 }}
+          className="w-full h-auto lg:h-[80vh] min-h-[600px] bg-espresso rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row-reverse z-20 mt-0 lg:mt-8"
+        >
           <div className="lg:w-1/2 relative h-[40vh] lg:h-full">
             <Image
               src="/images/melo/01_Fachadas_e_Marca/google_maps_melo_12.jpg"

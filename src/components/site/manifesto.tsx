@@ -20,8 +20,9 @@ export function Manifesto() {
 
   return (
     <section 
+      id="a-casa"
       ref={containerRef}
-      className="relative w-full py-24 md:py-40 px-6 lg:px-12 bg-paper text-text-light overflow-hidden"
+      className="relative w-full py-24 md:py-40 px-6 lg:px-12 bg-paper text-text-light overflow-hidden scroll-mt-24"
     >
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
