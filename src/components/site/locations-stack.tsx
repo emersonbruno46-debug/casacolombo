@@ -110,7 +110,7 @@ export function LocationsStack() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
       </div>
     </section>
